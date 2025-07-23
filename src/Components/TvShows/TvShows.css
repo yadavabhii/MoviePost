@@ -1,0 +1,15 @@
+.tvshows-container {
+  padding-top: 8%;
+}
+
+h1 hr {
+  margin-top: 5px;
+  width: 160px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #FF4141;
+}
+
+.tvshows-heading {
+  padding: 0 50px;
+}

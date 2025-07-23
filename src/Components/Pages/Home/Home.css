@@ -1,0 +1,116 @@
+.home-content {
+  position: relative;
+}
+
+iframe {
+  margin-top: 10vh;
+  height: 90vh;
+}
+
+.hero-caption {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  color: white;
+  z-index: 2;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-caption.fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+}
+
+
+/* Banner Image */
+.hero-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  mask-image: linear-gradient(to right, transparent, black 75%);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+  object-fit: cover;
+}
+
+/* Text Content on Banner */
+.hero-caption {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  color: white;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+/* Caption Image (Logo or Branding) */
+.caption-img {
+  width: 90%;
+  max-width: 420px;
+  margin-bottom: 30px;
+}
+
+/* Paragraph Text */
+.hero-caption p {
+  max-width: 700px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Buttons Container */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  /* Mobile responsive */
+}
+
+/* Base Button Style */
+.hero-buttons button {
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+  display: inline-flex;
+  align-items: center;
+  background: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Play Button Hover */
+.hero-buttons .play-button:hover {
+  background: #ffffffbf;
+}
+
+/* Info Button Hover */
+.hero-buttons .info-button:hover {
+  background: #6d6d6e66;
+}
+
+/* Play Button Image */
+.play-button img {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+/* Info Button Image */
+.info-button img {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+/* Info Button Styling */
+.hero-buttons .info-button {
+  background: #6d6d6eb3;
+  color: #fff;
+}
