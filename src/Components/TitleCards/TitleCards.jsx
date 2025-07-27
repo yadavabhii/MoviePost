@@ -9,6 +9,8 @@ const TitleCards = ({ category, categoryKey, title }) => {
   const dispatch = useDispatch();
 
   const { moviesByCategory, status } = useSelector((state) => state.movies);
+  console.log(moviesByCategory);
+
 
   const categoryValue = category || categoryKey; // fallback support
   const movies = moviesByCategory[categoryValue] || [];
